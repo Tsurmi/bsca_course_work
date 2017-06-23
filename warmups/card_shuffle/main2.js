@@ -15,7 +15,42 @@ function generateDeck(){
   }
   return tempDeck;
 }
+
+function deckMap(deckIn){
+  for(var i=0; i<deckIn.length; i+=1){
+
+  var card = '';
+
+  if(deckIn[i] <=13){
+    deckIn[i] = deckIn[i] + 'H';
+
+  }
+  else if(deckIn[i] <=26){
+            //condition         if      true           or  false
+    deckIn[i] = (deckIn [i]%13 !== 0) ? (deckIn[i]%13) + 'S' : '13S';
+
+  }
+  else if(deckIn[i] <= 39){
+    deckIn[i] = (deckIn [i]%13 !== 0) ? (deckIn[i]%13) + 'C' : '13C';
+
+  }
+  else if(deckIn[i] <= 52){
+    deckIn[i] = (deckIn [i]%13 !== 0) ? (deckIn[i]%13) + 'D' : '13D';
+
+  }
+  else{
+    console.log("Too many cards!");
+  }
+
+  }
+  return deckIn;
+}
+
+
 var deck = generateDeck();
+
+deckMap(deck);
+console.log("Mapped deck:", deck);
 
 function shuffle(deckIn){
   for(var j=0; j<deckIn.length; j+=1){
@@ -27,16 +62,16 @@ function shuffle(deckIn){
     deckIn[swapIndex] = tempCard;
   }
 
-console.log("DECK LENGTH", deckIn.length);
+// console.log("DECK LENGTH", deckIn.length);
   return deckIn;
 }
 deck = shuffle(deck);
 
 var checkArray = [];
-deck.forEach(fucntion(card,index)){
+deck.forEach(function(card,index){
   if(deck.indexOf(card) === index){
     checkArray.push(card);
   }
 });
 
-console.log("CHECK ARRAY LENGTH",checkArray.length);
+// console.log("CHECK ARRAY LENGTH",checkArray.length);

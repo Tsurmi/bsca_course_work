@@ -172,20 +172,17 @@
     fleetFoxes.removeBandmate("Mary Screech");
     console.log("My band is now:",fleetFoxes);
 
-    fleetFoxes.bandPlay = function bandPlay(){
-      var bandMembers = Object.keys(this);
-
     fleetFoxes.bandPlay = function bandPlay() {
         var bandMembers = Object.keys(this);
         var band = this;
 
     bandMembers.forEach(function(bandMember){
-        if(typeof(band[bandMember]) === "String"){
-        console.log(bandMembers,"plays the",band[bandMember]);
+        if(typeof(band[bandMember]) === "string"){
+        console.log(bandMember,"plays the",band[bandMember]);
             }
-          })
+          });
         }
-   }
+
 
     //console.log("My band:",fleetFoxes);
 

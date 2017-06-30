@@ -167,10 +167,10 @@
     delete this[name];
     }
     fleetFoxes.removeBandmate("Johnny Boom");
-    console.log("My band is now:",fleetFoxes);
+    //console.log("My band is now:",fleetFoxes);
 
     fleetFoxes.removeBandmate("Mary Screech");
-    console.log("My band is now:",fleetFoxes);
+    //console.log("My band is now:",fleetFoxes);
 
     fleetFoxes.bandPlay = function bandPlay() {
         var bandMembers = Object.keys(this);

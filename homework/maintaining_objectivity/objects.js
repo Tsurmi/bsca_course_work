@@ -180,7 +180,7 @@
         if(typeof(band[bandMember]) === "string"){
         console.log(bandMember,"plays the",band[bandMember]);
             }
-          });
+          })
         }
 
 

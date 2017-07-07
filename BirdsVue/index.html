@@ -4,67 +4,84 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title> Birds </title>
+
+    <!--Font Family-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
-    <div id="app">
-      <h2> {{ title }}</h2>
-      <div>
-        <div v-for="b in birds">
+    <center>
+      <div id='app'>
+        <div class='birdHeader'>
+          <h1> {{ title }} </h1>
 
-          <h3>{{ b.name }}</h3>
-          <p>{{ b.species }}</p>
-          <p>{{ b.gender }}</p>
-          <img :src="b.img">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>News</li>
+            <li>Exhibits</li>
+            <li>Contacts</li>
+          </ul>
+
         </div>
-      </div>
 
-    <div>
+        <hr style='color: #333;'>
 
-         <form v-on:submit.prevent='addBird'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-md-12 birds' v-for="bird in birds">
+              <h2> {{ bird.name }} </h2>
+              <h4> Species: {{ bird.species }} </h4>
+              <h4> Gender: {{ bird.gender }}</h4>
+              <img :src="bird.img" class="birdImage"/>
+            </div>
+          </div>
+        </div>
 
-           <div class='col-md-12'>
-              <label>Bird Name</label>
-              <input type="text" v-model='name' />
-           </div>
+        <div>
 
-           <div class='col-md-12'>
+          <form id="Form" v-on:submit.prevent='addBird'>
+
+            <div class='col-md-12'>
+                <label>Bird Name</label>
+                <input type='text' v-model='name' />
+            </div>
+
+            <div class='col-md-12'>
               <label>Bird Species</label>
-              <input type="text" v-model='species' />
-           </div>
+              <input type='text' v-model='species' />
+            </div>
 
-           <div class='col-md-12'>
-             <label>Bird Gender</label>
-             <input type="text" v-model='gender' />
-           </div>
+            <div class='col-md-12'>
+              <label>Bird Gender</label>
+              <input type='text' v-model='gender' />
+            </div>
 
-           <div class='col-md-12'>
-             <label>Bird Image</label>
-             <input type="text" v-model='img' />
-           </div>
-           <button type='submit' class='btn btn-primary'>Submit</button>
-         </form>
+            <div class='col-md-12'>
+              <label>Bird Image</label>
+              <input type='text' v-model='img' />
 
-       </div>
-     </div>
+            </div class='col-md-12'>
 
+            <button id='myButton' type='submit' class='btn btn-primary'>Add Bird</button>
+          </form>
+
+        </div>
+
+      </div>
+    </center>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      <script src="https://unpkg.com/vue/dist/vue.js"></script>
-      <script type="text/javascript" src="js/app.js">
-</script>
-    </body>
-  </html>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+</html>

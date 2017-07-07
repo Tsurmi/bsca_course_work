@@ -1,13 +1,34 @@
 .flex-container {
-  border: solid 10px #f1c40f
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  flex-wrap: wrap;
 }
 
 .flex-item {
-  font-size: 50px
+  font-size: 50px;
   text-align: center;
+  width: calc(33.33% - 40px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin: 20px;
+}
+
+.guy-image {
+  width: 50%;
 }
 .item1 {
+  display: flex;
   background-color: #1abc9c;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.icon-flex{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 .item2 {
   background-color: #3498db;

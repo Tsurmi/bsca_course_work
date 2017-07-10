@@ -28,10 +28,6 @@ In order to implement flex properties you need a `flex container` (parent) which
 ### Flex direction (main and cross axis)
   - row (default) / row-reverse
   - column / column-reverse
-//flex-container is the parent to the child which
-//are the flex-items.
-//row is default
-//justify-content will allow you to center the to the page. It creates the white space on the left and right of the divs.
 
 
 #### justify-content: What to do with the main axis extra space?

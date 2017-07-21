@@ -25,7 +25,7 @@
     <div class="jumbotron">
       <h4> {{  title }} </h4>
       <p>HOME RUN HITTERS</p>
-    </div>
+  </div>
     <div class="card-container">
       <div v-for="p in players" class="card">
         <h2 class="card-header">{{  p.name }}</h2>
@@ -33,10 +33,11 @@
             <h3 class="team-name">{{ p.team }}</h3>
             <img :src="p.img" alt="" class="card-img">
             <div class="card-body">
-          </div>
-        </div>
+      </div>
+    </div>
 
   </div>
+</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

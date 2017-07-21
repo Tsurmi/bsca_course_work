@@ -1,11 +1,14 @@
 body {
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  background: pink;
+  /*background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);*/
 }
 
 .jumbotron {
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background: purple;
+  /*background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);*/
   border: solid 6px white;
   border-radius: 25px;
+  color: white;
 
 }
 
@@ -15,6 +18,7 @@ body {
   font-size: 50px;
   font-style: bold;
   text-shadow: #444 0 1px 1px;
+  color: white;
 }
 
 .jumbotron p {
@@ -29,11 +33,13 @@ body {
 }
 
 .card {
-  border: solid 6px white;
+  border: solid 20px white;
   border-radius: 25px;
+  color: white;
   font-family: 'Fjalla One', sans-serif;
   font-size: 25px;
-  background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+  background: purple;
+  /*background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);*/
   text-align: center;
   width: calc(50% - 10px);
   margin: 5px;

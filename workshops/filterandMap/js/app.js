@@ -17,6 +17,7 @@ var baseballPlayers = [
 { name: "Reggie Jackson", HR: 563, team: "Oakland Athletics", img: "http://i.usatoday.net/communitymanager/_photos/daily-pitch/2010/06/25/reggiex-large.jpg"},
 { name: "Manny Ramirez", HR: 555, team: "Cleveland Indians", img: "http://www2.pictures.gi.zimbio.com/Manny+Ramirez+Tampa+Bay+Rays+v+Boston+Red+bD7AcTWcdxUl.jpg"},
 { name: "Chipper Jones", HR: 468, team: "Atlanta Braves", img: "http://baseballreflections.com/wp-content/uploads/2010/08/ChipperJonesAtBat.jpg"},
+{ name: "Rupunzel", HR: 1000, team: "Princess Powers", img: "https://s-media-cache-ak0.pinimg.com/736x/a1/27/44/a12744141823e9cd1260871f2384a42a--punk-princess-princess-rapunzel.jpg"}
 ];
 console.log("YOU FOUND APPJS FILE!");
 

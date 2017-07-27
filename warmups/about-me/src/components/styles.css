@@ -1,0 +1,42 @@
+body {
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.main-app {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.header {
+  margin-top: 4em;
+}
+
+.app-header {
+  float: left;
+  text-align: center;
+  width: 100%;
+  font-size: 3em;
+}
+
+.nav-bar {
+  list-style: none;
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: block;
+  float: left;
+}
+
+.nav-bar li {
+  display: inline;
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.nav-bar li:hover {
+  text-decoration: underline;
+}

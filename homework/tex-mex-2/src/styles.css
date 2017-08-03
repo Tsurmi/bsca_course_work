@@ -1,0 +1,31 @@
+body {
+
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.menu-item {
+  min-width: calc(50% - 2em);
+  padding-top: 5em;
+  padding-bottom: 5em;
+  border: dotted 10px red;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.img {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}

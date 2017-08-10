@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import {HomeContainer, AboutContainer, ShopContainer}from './containers';
-import './App.css';
+import {DataProvider} from './containers';
+import {BrowserRouter as Router} from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <HomeContainer />
-        <AboutContainer />
-        <ShopContainer />
-      </div>
+      <Router>
+        <DataProvider />
+      </Router>
+
     );
   }
 }

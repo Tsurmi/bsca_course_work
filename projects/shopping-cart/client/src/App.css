@@ -1,0 +1,101 @@
+  body {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    text-align: center;
+  }
+
+  .navLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    width: 96%;
+}
+
+  .navLinks p {
+    color: white;
+    font-family: garamond;
+    font-size: 18px;
+  }
+
+  .navBar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+  }
+
+  .Link {
+    display: block;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    width: 100%;
+}
+
+ .cartCounter {
+   color: white;
+ }
+
+  .productCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 30px;
+    box-shadow: #444 0 6px 6px;
+    width: calc(45% - 20px);
+    margin-left: 20px;
+    margin-top: 70px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+}
+
+  .productCardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .productCard img {
+    max-width: 90%;
+    padding-left: 50px;
+
+  }
+
+  .productName {
+    text-align: center;
+}
+
+  .productPrice {
+    font-size: 35px;
+  }
+
+  .formCard {
+    margin-top: 100px;
+  }
+
+  .homeCard {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+    background-image: url("http://insights.marinsoftware.com/wp-content/uploads/2014/04/google-blog-image.gif");
+    background-size: contain;
+    height: 700px;
+  }
+
+  .aboutCard {
+    font-size: 50px;
+    font-family: garamond;
+    color: black;
+}
+
+  .btnAddToCart {
+    margin-bottom: 20px;
+  }

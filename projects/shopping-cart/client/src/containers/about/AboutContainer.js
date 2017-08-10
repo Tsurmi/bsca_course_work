@@ -12,8 +12,8 @@ class AboutContainer extends React.Component {
 
   getTitle = () => {
     setTimeout(() => {
-      this.setState({ title: 'About Container Title'});
-    }, 3000)
+      this.setState({ title: 'About'});
+    }, 0)
   }
 
   render() {

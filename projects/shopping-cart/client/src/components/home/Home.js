@@ -3,7 +3,7 @@ import HomeTile from "./HomeTile";
 
 const Home = (props) => {
   return(
-    <div>
+    <div className='homeTile'>
     <h1>{props.title}</h1>
     <HomeTile />
     </div>

@@ -18,7 +18,7 @@ class DataProvider extends React.Component {
 
   fetchProductsFromServer = () => {
     const temporaryArray = [];
-    for(var i=0; i<20; i++){
+    for(var i=0; i<21; i++){
       temporaryArray.push({
         productName: faker.commerce.productName(),
         price: faker.commerce.price(),

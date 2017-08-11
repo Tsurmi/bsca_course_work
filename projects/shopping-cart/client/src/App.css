@@ -2,22 +2,30 @@
     background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
     text-align: center;
   }
-
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
   .navLinks {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
+    font-family: 'Montserrat';
     overflow: hidden;
+    letter-spacing: 1px;
     background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
     background-blend-mode: multiply,multiply;
-    width: 96%;
-}
+    width: 95.5%;
+    margin-left: 3px;
+  }
 
   .navLinks p {
     color: white;
-    font-family: garamond;
-    font-size: 18px;
+    font-family: 'Montserrat';
+    font-size: 19px;
+  }
+
+  .navLinks img {
+    max-width: 40px;
+    max-height: 40px;
   }
 
   .navBar ul li a {
@@ -34,68 +42,106 @@
     padding: 12px;
     text-decoration: none;
     width: 100%;
-}
+  }
 
- .cartCounter {
-   color: white;
+  .homeCard {
+    background-image: url("http://insights.marinsoftware.com/wp-content/uploads/2014/04/google-blog-image.gif");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat';
+    margin: 10px;
+    /*background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);*/
+    background-size: contain;
+    height: 700px;
+  }
+
+  .homeTile {
+    font-family: 'Montserrat';
+  }
+
+  .aboutCard {
+    font-size: 30px;
+    font-family: 'Montserrat';
+    color: black;
+  }
+
+  .btnAddToCart {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Montserrat';
+
+  }
+
+  .productList {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
  }
 
   .productCard {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    border-radius: 30px;
-    box-shadow: #444 0 6px 6px;
-    width: calc(45% - 20px);
-    margin-left: 20px;
-    margin-top: 70px;
-    padding-bottom: 20px;
-    padding-right: 50px;
-}
+    margin: 5px;
+    width: calc(33.333% - 10px);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+  }
 
-  .productCardContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+  .productCard h1 {
+    font-family: 'Montserrat';
+    font-size: 25px;
+  }
+
+  .productCard h3 {
+    font-family: 'Montserrat';
+    font-size: 20px;
   }
 
   .productCard img {
     max-width: 90%;
-    padding-left: 50px;
+    margin-bottom: 10px;
+  }
+
+  .cartContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .cartCard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 5px;
+    letter-spacing: 1px;
+    width: calc(33.333% - 10px);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    font-family: 'Montserrat';
+    font-size: 15px;
+  }
+
+  .cardCard h3 {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+
+  .cartCard img {
+    max-width: 90%;
+    margin-bottom: 10px;
 
   }
 
-  .productName {
-    text-align: center;
-}
+  .cartCounter {
+   color: white;
+ }
 
-  .productPrice {
-    font-size: 35px;
-  }
-
-  .formCard {
-    margin-top: 100px;
-  }
-
-  .homeCard {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 10px;
-    background-image: url("http://insights.marinsoftware.com/wp-content/uploads/2014/04/google-blog-image.gif");
-    background-size: contain;
-    height: 700px;
-  }
-
-  .aboutCard {
-    font-size: 50px;
-    font-family: garamond;
-    color: black;
-}
-
-  .btnAddToCart {
-    margin-bottom: 20px;
+  .shoppingCart {
+    font-family: 'Montserrat';
+    font-size: 25px;
   }

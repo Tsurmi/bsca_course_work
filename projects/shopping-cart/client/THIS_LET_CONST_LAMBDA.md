@@ -74,3 +74,24 @@ const arr = [1,2,3]
 for (let i=0; i < arr.length; i++){
 
 }
+
+
+const isloaded = true // boolean
+const count = 10 // number
+const name = 'Fred' // string
+const startDate = new Date() // object type
+
+const submitForm = (event) => {} // do something // function
+
+const user = {
+  name: "Jim", // string
+  isActive: true, // boolean
+  favoriteColor: "blue" // string
+}// object type
+
+const colors = [
+  'blue'
+  'green'
+  'red'
+]
+colors[1ls]
